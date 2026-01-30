@@ -11,11 +11,12 @@ jobs:
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Fetch target branch
         run: git fetch origin ${{ github.base_ref }}
 
       - name: Check for merge conflicts
         run: |
-          git checkout ${{ github.head_ref }}
           git merge --no-commit --no-ff origin/${{ github.base_ref }} || exit 1
