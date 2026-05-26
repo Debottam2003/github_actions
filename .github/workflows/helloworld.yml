@@ -18,6 +18,5 @@ jobs:
   say-hello-3:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello using node
-        run: console.log("Hello, World!")
-        shell: node
+      - name: IP address
+        run: ip a
