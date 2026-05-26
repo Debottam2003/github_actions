@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello using python
-        run: print("Hello, World!")
+        run: print(5 + 5)
         shell: python
   say-hello-3:
     runs-on: ubuntu-latest
