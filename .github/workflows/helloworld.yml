@@ -4,8 +4,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  say-hello:
+  say-hello-1:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
         run: echo "Hello, World!"
+  say-hello-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello using python
+        run: print("Hello, World!")
+        shell: python
+  say-hello-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello using node
+        run: console.log("Hello, World!")
+        shell: node
