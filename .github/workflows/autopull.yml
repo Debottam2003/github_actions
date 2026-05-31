@@ -3,7 +3,7 @@ name: Auto Create Pull Request
 on:
   push:
     branches:
-      - feature-branch
+      - debottam
 
 jobs:
   create-pr:
